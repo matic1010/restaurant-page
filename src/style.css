@@ -1,0 +1,38 @@
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./restaurant.jpg);
+    background-size: cover;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-text {
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav button {
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    color: inherit;
+}
