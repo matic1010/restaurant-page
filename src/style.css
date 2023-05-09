@@ -1,11 +1,13 @@
 :root {
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: url(./restaurant.jpg);
-    background-size: cover;
+    height: 100vh;
     color: white;
+    background: url(./background.jpg);
+    background-size: cover;
 }
 
 header {
