@@ -1,4 +1,4 @@
-function Header() {
+function Header(links) {
     const header = document.createElement("header");
     const logoContainer = document.createElement("div");
     logoContainer.classList.add("logo")
@@ -8,21 +8,17 @@ function Header() {
     
     logoContainer.appendChild(logoText);
     header.appendChild(logoContainer);
-    header.appendChild(HeaderNav())
+    header.appendChild(HeaderNav(links))
 
     return header;
 }
 
-function HeaderNav() {
-    const temporaryLinks = ["Home", "Menu", "Contact"];
+function HeaderNav(links) {
     const nav = document.createElement("nav");
     const linkList = document.createElement("ul");
     linkList.classList.add("nav-links");
-    temporaryLinks.forEach(link => {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `<button type="button">${link}</button>`
-        listItem.classList.add("header-link")
-        linkList.appendChild(listItem);
+    links.forEach(link => {
+        linkList.appendChild(link);
     })
     nav.appendChild(linkList);
     return nav;
